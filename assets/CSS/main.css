@@ -687,19 +687,19 @@ height: 40px;
     padding: 20px 20px;
 }
 .icons1 .icon1 button{
-    padding: 10px 150px;
-    border-radius: 43px;
-    font-display: flex;
-    align-items: center;
-    gap: 15px;
-    background-color: black;
+    width: 100%;
+    padding:10px 150px  ;
+    background-color: #000000;
+    border-radius: 999px;
+}
+.icons1 .icon1{
     white-space: nowrap;
 }
 .icon1 img{
     filter: invert(100%);
     
 }
-.icon2 button{
+.icons1 .icon2 button{
     border:2px solid #EDEDED;
     border-radius: 50%;
 }
@@ -1150,6 +1150,12 @@ display: none !important;
 }
 .payment{
     flex-direction: column;
+}
+.On-sale .time span{
+    font-size: 40px;
+}
+.icons1{
+    flex-direction:column ;
 }
 }
 
