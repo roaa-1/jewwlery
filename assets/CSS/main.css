@@ -800,8 +800,11 @@ height: 40px;
 }
 .blog{
     overflow-x: scroll;
-     -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none; 
+}
+.blogs{
+    justify-content: center;
 }
 .blog .card{
     border: none;
@@ -839,15 +842,15 @@ height: 40px;
 .instashop{
     padding-top: 5.6rem;
     overflow-x: scroll;
-    cursor: pointer;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
 }
 .Shop-scroll{
-
+ overflow-x: auto;
 scroll-behavior: smooth;
 }
 .Shop-scroll::-webkit-scrollbar {
-    height: 2px;           /* Chrome, Safari, Opera */
+    display: none;           /* Chrome, Safari, Opera */
 }
 .Shop-scroll .img-inst{
     min-width: 300px;
@@ -860,7 +863,11 @@ scroll-behavior: smooth;
 .img-inst img{
     width:476px;
     height: 470px;
+    object-fit: cover;
     transition: transform 0.8s ease;
+}
+.img-insta{
+    justify-content: center;
 }
 .instashop .insta-icon a{
     position: absolute;
@@ -1077,6 +1084,7 @@ justify-content: flex-start;
 .form-group button{
     width: 100%;
 }
+
 }
 
 @media (max-width: 992px){
@@ -1091,6 +1099,12 @@ justify-content: flex-start;
 }
 .detils a{
     padding: 5px 10px;
+}
+.blogs{
+    justify-content: flex-start;
+}
+.img-insta {
+    justify-content: flex-start; 
 }
 }
 @media (max-width: 768px){
@@ -1120,6 +1134,12 @@ justify-content: flex-start;
     }
 .nav-icon{
     display: none;
+}
+.blogs{
+    justify-content: flex-start;
+}
+.img-insta {
+    justify-content: flex-start; 
 }
 }
 @media (max-width: 576px){
@@ -1156,6 +1176,12 @@ display: none !important;
 }
 .icons1{
     flex-direction:column ;
+}
+.blogs{
+    justify-content: flex-start;
+}
+.img-insta {
+    justify-content: flex-start; 
 }
 }
 
