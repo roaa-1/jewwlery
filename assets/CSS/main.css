@@ -9,14 +9,34 @@ body{
     font-family: var(--mainfont1);
     color: black;
 }
-header{
-    position: sticky;
-    z-index: 1000;
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #C8102E;
 }
-header  .item1.carousel-caption{
+.header-secroll{
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.hidnav{
+display: none;
+}
+.smallnav{
+    display: none;
+}
+
+.display1 {
+  display: block !important; 
+}
+.header  .item1.carousel-caption{
 text-align: left;
  padding-left: 60px;
     padding-bottom: 80px;
+}
+.small .accordion-body a{
+    text-decoration: none;
+    color: rgb(95, 97, 94);
 }
 .type1{
     font-family: var(--font2);
@@ -28,15 +48,16 @@ text-align: left;
     font-size: 3.5rem;
     font-weight: 600;
 }
+
 .carousel-indicators [data-bs-target]{
     width: 10px;
     height: 10px;
     border-radius: 50%;
 }
-header .btn1{
+.header .btn1{
     margin: 20px 0 0 60px;
 }
-header .text2.carousel-caption{
+.header .text2.carousel-caption{
     top: 30%;
     left: 0;
     bottom: 0;
@@ -55,12 +76,18 @@ header .text2.carousel-caption{
     padding: 40px 0;
     color: white;
 }
-.nav-icon svg{
+.login a{
+    color: black;
+}
+.icon svg{
     transition: fill 0.5s ease;
 }
 .name-web span{
     font-size: 0.5rem;
     font-weight: 400;
+}
+.nav-iconn svg:hover{
+    fill: rgb(200, 16, 46);
 }
 .nav-icon svg:hover{
     fill: rgb(200, 16, 46);
@@ -68,11 +95,11 @@ header .text2.carousel-caption{
 .offcanvas-body{
     height: 40% !important;
 }
-header .offcanvas-body  {
+.header .offcanvas-body  {
     flex-shrink: 0 !important;
     white-space: nowrap !important;
 }
-header .dropdown-menu a{
+.header .dropdown-menu a{
     color: #000;
 }
 .offcanvas-header a{
@@ -104,7 +131,20 @@ header .dropdown-menu a{
     align-items: center;
     gap: 10px;
 }
-header .dropdown-menu {
+.header .dropdown-menu {
+    display: block; 
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    color: #000;
+
+}
+.hidnav .dropdown-menu {
     display: block; 
     opacity: 0;
     visibility: hidden;
@@ -121,6 +161,7 @@ header .dropdown-menu {
     font-size: 18px;
     font-weight: 700;
 }
+
 .nav-item.dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
@@ -140,7 +181,7 @@ nav .nav-link:hover {
 .dropdown-menu a:hover {
     color: rgb(200, 16, 46);
 }
-header .accordion-item{
+.header .accordion-item{
     border: 0;
     outline: 0;
 }
@@ -156,11 +197,18 @@ header .social img{
     width: 100%; 
     margin-top: 30px; 
 }
+.main-nav1 a{
+color:black !important;
+font-weight: 700 !important;
+}
+.hidnav .dropdown-menu a:hover{
+    color: rgb(200, 16, 46) !important;
+}
 .collapse{
     border-top:1px solid #ffffff1a;
     border-bottom:1px solid #ffffff1a;
 }
-header .accordion a{
+.header .accordion a{
     color:rgb(95, 97, 94);
     text-decoration: none;
 }
@@ -175,6 +223,7 @@ header .accordion a{
 .categories{
     padding: 5.6rem 0;
     overflow-x: scroll;
+   
 }
 .title{
     font-size:2.8rem;
@@ -1022,12 +1071,20 @@ footer h3{
 .detils a{
     padding: 5px 15px;
 }
+.smallnav{
+    display: none;
+}
 }
 @media (max-width: 1200px){
     .carousel-caption {
     text-align: center !important;
 }
-
+.hidnav{
+    display: none;
+}
+.smallnav{
+    display: block;
+}
 .carousel-caption h5.type1,
 .carousel-caption h5.type2 {
     font-size: 2rem !important; 
@@ -1091,6 +1148,16 @@ justify-content: flex-start;
     .offcanvas.offcanvas-end {
     width: 95%;  
 }
+.hidnav{
+    display: none;
+}
+.smallnav{
+    display: block;
+}
+.spa1{
+    display: none;
+}
+
 .footer .nav-c li { 
     max-width: 100%;
 }
@@ -1119,6 +1186,16 @@ justify-content: flex-start;
 .categories-scroll .card img {
         height: 150px;
 }
+.hidnav{
+    display: none;
+}
+.smallnav{
+    display: block;
+}
+.spa2{
+    display: none;
+}
+
 .likh{
         display: none !important;
 }
@@ -1145,6 +1222,15 @@ justify-content: flex-start;
 @media (max-width: 576px){
 .footer{
     position: sticky;
+}
+.hidnav{
+    display: none;
+}
+.smallnav{
+    display: block;
+}
+.spa3{
+    display: none;
 }
 .like{
     display: none;
