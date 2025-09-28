@@ -44,8 +44,9 @@ const nextImg=()=>{
   }
   modelImg.setAttribute("src",imageModel[currentIndex].getAttribute("src"));
 } 
-imagShow.forEach(img=>{
+imagShow.forEach((img,index)=>{
   img.addEventListener("click",(e)=>{
+    currentIndex = index; 
     modelImg.setAttribute("src", imageModel[currentIndex].getAttribute("src"));
     showModel();
   });
@@ -60,7 +61,7 @@ document.addEventListener("keydown", function({code}) {
     prevImg();
   }
 })
-}
+};
 const customModel2 = () => {
   const modelWeb = document.querySelector(".my-model1");
   const imageModel1 = Array.from(document.querySelectorAll(".img-mo1")); 
