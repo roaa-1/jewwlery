@@ -10,6 +10,8 @@
     <!-- bootstrap css  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-…(بعض القيمة هنا)…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- custom css-->
     <link rel="stylesheet" href="./assets/CSS/main.css">
 </head>
@@ -18,14 +20,13 @@
 
 
 <body>
-    <header class="header1">
-        <div class="hidnav">
+        <div class="hidnav d-none">
             <div class="container">
                 <div class="hiddennav d-flex justify-content-between p-2">
                     <div class="logon">
                         <img src="./assets/image/navbar/logo (1).svg" alt="logo">
                     </div>
-                    <div class="main-nav1">
+                    <div class="main-nav1 d-none d-xl-block">
                         <div class="container-fluid">
                             <nav class="navbar navbar-expand-lg">
                                 <div class="w-100 d-flex justify-content-between align-items-center">
@@ -86,48 +87,14 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="nav-iconn ">
-                        <ul class="d-flex list-unstyled gap-3 align-items-center justify-content-center pt-2">
-                            <li><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        fill="#00000" class="bi bi-person" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
-                                    </svg></a></li>
-                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#00000"
-                                        class="bi bi-search" viewBox="0 0 16 16">
-                                        <path
-                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                                    </svg></a></li>
-                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#00000"
-                                        class="bi bi-heart" viewBox="0 0 16 16">
-                                        <path
-                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                                    </svg></a></li>
-                            <li class="position-relative"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" fill="#00000" class="bi bi-cart2" viewBox="0 0 16 16">
-                                        <path
-                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                                    </svg>
-                                    <span
-                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger px-1 py-1">
-                                        24
-                                        <span class="visually-hidden">items in cart</span>
-                                    </span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="smallnav">
-                <div class="small d-flex justify-content-between p-2">
-                        <nav class="navbar ">
-                            <div class="container-fluid  d-flex justify-content-between align-items-center">
-                                <button class="navbar-toggler order-0 border-0" type="button"
+                    <nav class="navbar1 d-block d-xl-none">
+                            <div class="container-fluid  d-flex justify-content-between align-items-center ">
+                                <button class="navbar-toggler order-0 border-0  " type="button"
                                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar8"
                                     aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
+                                    <i class="fa-solid fa-bars" style="color: #000000; font-size: 24px;"></i>
                                 </button>
-                                <div class="d-xl-none order-2" style="width: 40px;"></div>
+                                <div class="d-xl-none order-2 " style="width: 40px;"></div>
                                 <div class="offcanvas offcanvas-start text-bg-white d-xl-none" tabindex="-1"
                                     id="offcanvasDarkNavbar8" aria-labelledby="offcanvasDarkNavbarLabel">
                                     <div
@@ -281,43 +248,43 @@
                                     </div>
                                 </div>
                             </div>
-                        </nav>
-                    <div class="logon">
+                    </nav>
+                    <div class="logonn">
                         <img src="./assets/image/navbar/logo (1).svg" alt="logo">
                     </div>
-                    <div class="nav-iconn">
-                        <ul class="d-flex list-unstyled gap-3 align-items-center justify-content-center pt-2 pe-2">
+                    <div class="nav-iconn ">
+                        <ul class="d-flex list-unstyled gap-3 align-items-center justify-content-center pt-2">
                             <li class="spa1"><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         fill="#00000" class="bi bi-person" viewBox="0 0 16 16">
                                         <path
                                             d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
                                     </svg></a></li>
-                                <li class="spa2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            fill="#000000" class="bi bi-search" viewBox="0 0 16 16">
-                                            <path
-                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                                        </svg></a></li>
-                                <li class="spa3"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            fill="#000000" class="bi bi-heart" viewBox="0 0 16 16">
-                                            <path
-                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                                        </svg></a></li>
-                                <li class="position-relative spa4"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24" fill="#000000" class="bi bi-cart2"
-                                            viewBox="0 0 16 16">
-                                            <path
-                                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                                        </svg>
-                                        <span
-                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger px-1 py-1">
-                                            24
-                                            <span class="visually-hidden">items in cart</span>
-                                        </span></a></li>
-                            </ul>
+                            <li class="spa2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#00000"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    </svg></a></li>
+                            <li class="spa3"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#00000"
+                                        class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                    </svg></a></li>
+                            <li class="position-relative spa4"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" fill="#00000" class="bi bi-cart2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                                    </svg>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger px-1 py-1">
+                                        24
+                                        <span class="visually-hidden">items in cart</span>
+                                    </span></a></li>
+                        </ul>
                     </div>
-                </div>              
-    </div>
-    </header>
+                </div>
+            </div>
+            
+        </div>
     <main>
         <section class="header">
             <div id="carouselExampleIndicators" class="carousel slide position-relative" data-bs-ride="carousel">
@@ -759,10 +726,10 @@
                             <div class="Best-Seller-scroll d-flex flex-nowrap gap-4 py-3">
                                 <div class="card">
                                     <div class="img-all">
-                                        <img src="./assets/image/Best-Seller/product-5.webp"
-                                            class="card-img-top img-org" alt="Earrings">
-                                        <img src="./assets/image/Best-Seller/product-6.webp"
-                                            class="card-img-top img-hover" alt="Earrings">
+                                    <a href="viewproduct.html"> <img src="./assets/image/Best-Seller/product-5.webp"
+                                            class="card-img-top img-org img-mo" alt="Earrings"></a>
+                                    <a href="viewproduct.html"> <img src="./assets/image/Best-Seller/product-6.webp"
+                                            class="card-img-top img-hover" alt="Earrings"/></a>
                                         <div class="icons">
                                             <div class="icon">
                                                 <button class="btn border-0" type="button" data-bs-toggle="offcanvas"
@@ -1043,8 +1010,8 @@
                                                 </div>
                                             </div>
                                             <div class="icon icon-link">
-                                                <a href="viewproduct.html"><img src="./assets/image/Best-Seller/eye.svg"
-                                                        class="eye" alt="eye"></a>
+                                                <img src="./assets/image/Best-Seller/eye.svg"
+                                                        class="eye img-show" alt="eye">
                                             </div>
                                         </div>
                                     </div>
@@ -1058,10 +1025,10 @@
                                 </div>
                                 <div class="card">
                                     <div class="img-all">
-                                        <img src="./assets/image/Best-Seller/product-7.webp"
-                                            class="card-img-top img-org" alt="Necklaces">
-                                        <img src="./assets/image/Best-Seller/product-8.webp"
-                                            class="card-img-top img-hover" alt="Necklaces">
+                                     <a href="viewproduct.html">  <img src="./assets/image/Best-Seller/product-7.webp"
+                                            class="card-img-top img-org img-mo" alt="Necklaces"/></a>
+                                    <a href="viewproduct.html">    <img src="./assets/image/Best-Seller/product-8.webp"
+                                            class="card-img-top img-hover" alt="Necklaces"/></a>
                                         <div class="icons">
                                             <div class="icon">
                                                 <button class="btn border-0" type="button" data-bs-toggle="offcanvas"
@@ -1338,8 +1305,8 @@
                                                 </div>
                                             </div>
                                             <div class="icon icon-link">
-                                                <a href="viewproduct.html"><img src="./assets/image/Best-Seller/eye.svg"
-                                                        class="eye" alt="eye"></a>
+                                            <img src="./assets/image/Best-Seller/eye.svg"
+                                                        class="eye img-show" alt="eye"/>
                                             </div>
                                         </div>
                                     </div>
@@ -1353,10 +1320,10 @@
                                 </div>
                                 <div class="card">
                                     <div class="img-all">
-                                        <img src="./assets/image/Best-Seller/product-9.webp"
-                                            class="card-img-top img-org" alt="Ring">
-                                        <img src="./assets/image/Best-Seller/product-10.webp"
-                                            class="card-img-top img-hover" alt="Ring">
+<a href="viewproduct.html"><img src="./assets/image/Best-Seller/product-9.webp"
+                                            class="card-img-top img-org img-mo" alt="Ring"></a>
+                                     <a href="viewproduct.html">  <img src="./assets/image/Best-Seller/product-10.webp"
+                                            class="card-img-top img-hover" alt="Ring"></a>
                                         <div class="icons">
                                             <div class="icon">
                                                 <button class="btn border-0" type="button" data-bs-toggle="offcanvas"
@@ -1633,8 +1600,8 @@
                                                 </div>
                                             </div>
                                             <div class="icon icon-link">
-                                                <a href="viewproduct.html"><img src="./assets/image/Best-Seller/eye.svg"
-                                                        class="eye" alt="eye"></a>
+                                               <img src="./assets/image/Best-Seller/eye.svg"
+                                                        class="eye img-show" alt="eye">
                                             </div>
                                         </div>
                                     </div>
@@ -1648,10 +1615,10 @@
                                 </div>
                                 <div class="card">
                                     <div class="img-all">
-                                        <img src="./assets/image/Best-Seller/product-11.webp"
-                                            class="card-img-top img-org" alt="Ring">
-                                        <img src="./assets/image/Best-Seller/product-12.webp"
-                                            class="card-img-top img-hover" alt="Ring">
+                                <a href="viewproduct.html"><img src="./assets/image/Best-Seller/product-11.webp"
+                                            class="card-img-top img-org img-mo" alt="Ring"></a>
+                                    <a href="viewproduct.html"><img src="./assets/image/Best-Seller/product-12.webp"
+                                            class="card-img-top img-hover" alt="Ring"></a>
                                         <div class="icons">
                                             <div class="icon">
                                                 <button class="btn border-0" type="button" data-bs-toggle="offcanvas"
@@ -1927,9 +1894,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="icon icon-link">
-                                                <a href="viewproduct.html"><img src="./assets/image/Best-Seller/eye.svg"
-                                                        class="eye" alt="eye"></a>
+                                            <div class="icon icon-link img-show">
+                                                <img src="./assets/image/Best-Seller/eye.svg"
+                                                        class="eye" alt="eye">
                                             </div>
                                         </div>
                                     </div>
@@ -1947,6 +1914,119 @@
                 </div>
             </div>
         </section>
+        <div class="my-model ">
+            <div class="model-content model-contentscroll">
+            <svg class="close-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path fill="#0000000"
+                    d="M507.3 155.3C513.5 149.1 513.5 138.9 507.3 132.7C501.1 126.5 490.9 126.5 484.7 132.7L320 297.4L155.3 132.7C149.1 126.5 138.9 126.5 132.7 132.7C126.5 138.9 126.5 149.1 132.7 155.3L297.4 320L132.7 484.7C126.5 490.9 126.5 501.1 132.7 507.3C138.9 513.5 149.1 513.5 155.3 507.3L320 342.6L484.7 507.3C490.9 513.5 501.1 513.5 507.3 507.3C513.5 501.1 513.5 490.9 507.3 484.7L342.6 320L507.3 155.3z" />
+            </svg>
+            <svg class="left-btn"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path fill="#00000"
+                    d="M68.7 308.7C62.5 314.9 62.5 325.1 68.7 331.3L244.7 507.3C250.9 513.5 261.1 513.5 267.3 507.3C273.5 501.1 273.5 490.9 267.3 484.7L118.6 336L560 336C568.8 336 576 328.8 576 320C576 311.2 568.8 304 560 304L118.6 304L267.3 155.3C273.5 149.1 273.5 138.9 267.3 132.7C261.1 126.5 250.9 126.5 244.7 132.7L68.7 308.7z" />
+            </svg>
+            <svg class="right-btn"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path fill="#00000"
+                    d="M571.3 331.3C577.5 325.1 577.5 314.9 571.3 308.7L395.3 132.7C389.1 126.5 378.9 126.5 372.7 132.7C366.5 138.9 366.5 149.1 372.7 155.3L521.4 304L80 304C71.2 304 64 311.2 64 320C64 328.8 71.2 336 80 336L521.4 336L372.7 484.7C366.5 490.9 366.5 501.1 372.7 507.3C378.9 513.5 389.1 513.5 395.3 507.3L571.3 331.3z" />
+            </svg>
+            <div class="view-product d-flex flex-wrap">
+            <div class="img-view">
+            <img src="./assets/image/viewproduct.webp" alt="Product Image" class="img-model"/>
+            </div>
+            <div class="info-product ">
+            <h2>Casual Round Jewelery</h2>
+            <div class="Rating  d-flex gap-3 align-items-center ">
+                <div class="star d-flex justify-content-around align-items-center">
+                    <img src="./assets/image/Gold-Jewelery/wired-flat-237-star-rating-hover-pinch.svg" alt="star">
+                    <img src="./assets/image/Gold-Jewelery/wired-flat-237-star-rating-hover-pinch.svg" alt="star">
+                    <img src="./assets/image/Gold-Jewelery/wired-flat-237-star-rating-hover-pinch.svg" alt="star">
+                    <img src="./assets/image/Gold-Jewelery/wired-flat-237-star-rating-hover-pinch.svg" alt="star">
+                    <img src="./assets/image/Gold-Jewelery/wired-flat-237-star-rating-hover-pinch.svg" alt="star">
+                </div>
+                <div class="review">
+                    <span> (3.671 review) </span>
+                </div>
+                <div class="num-add d-flex align-items-center gap-1 ps-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#C8102E" class="bi bi-cart2"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                    </svg>
+                    <p class="mb-0">9 people just added this product to their cart</p>
+                </div>
+            </div>
+            <div class="salay d-flex gap-2">
+                <span class="new-sall">$14,99</span>
+                <div>
+                    <span class="old-sal ">$19.337</span>
+                    <span class="discount">-29%</span>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse justo dolor,<br>
+                consectetur vel
+                metus vitae, tincidunt finibus dui fusce tellus enim.</p>
+            <div class="size">
+                <h3>Size medium</h3>
+                <div class="size-box d-flex gap-4">
+                    <span class="box">XS</span>
+                    <span class="box ">S</span>
+                    <span class="box">M</span>
+                    <span class="box">L</span>
+                </div>
+            </div>
+            <div class="color">
+                <h3>Color Beige</h3>
+                <div class="color-box d-flex gap-3">
+                    <div class="color-btn"><span class="check-btn btnn1"></span></div>
+                    <div class="color-btn"><span class="check-btn btn2"></span></div>
+                    <div class="color-btn"><span class="check-btn bg-success"></span></div>
+                    <div class="color-btn"><span class="check-btn btn4"></span></div>
+                    <div class="color-btn"><span class="check-btn bg-dark"></span></div>
+                </div>
+            </div>
+            <div class="numofpro d-flex gap-2 align-items-center">
+                <div class="incris d-flex gap-4 justify-content-center align-items-center">
+                    <span>-</span>
+                    <span>1</span>
+                    <span>+</span>
+                </div>
+                <p class="m-0">15 products available</p>
+            </div>
+            <div class="iconns d-flex gap-4 align-items-center justify-content-center">
+                <div class="icona1">
+                    <button class="btn text-white" type="button"> ADD To CART <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="#ffffff" class="bi bi-cart2" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                        </svg></button>
+                </div>
+                <div class="icon2">
+                    <button type="button" class="btn border-0  like-btn" data-bs-toggle="button" aria-pressed="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-heart"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="icon2">
+                    <button class="btn" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z" />
+                            <path
+                                d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="buys d-flex  align-items-center">
+                <button class="text-center border-0">Pay with <img src="./assets/image/footer/paypal-2.svg"></button>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
         <section class="On-sale d-flex flex-wrap">
             <div class="items d-flex flex-column justify-content-center align-items-center">
                 <div class="titl">
@@ -1992,10 +2072,10 @@
                             <div class="Best-Seller-scroll d-flex flex-nowrap gap-4 py-3">
                                 <div class="card">
                                     <div class="img-all">
-                                        <img src="./assets/image/Trending/product-13.webp" class="card-img-top img-org"
-                                            alt="Earrings">
-                                        <img src="./assets/image/Trending/product-14.webp"
-                                            class="card-img-top img-hover" alt="Earrings">
+                                        <a href="viewproduct.html"><img src="./assets/image/Trending/product-13.webp" class="card-img-top img-org img-mo1"
+                                            alt="Earrings"/></a>
+                                        <a href="viewproduct.html"> <img src="./assets/image/Trending/product-14.webp"
+                                            class="card-img-top img-hover" alt="Earrings"/></a>
                                         <div class="icons">
                                             <div class="icon">
                                                 <button class="btn border-0" type="button" data-bs-toggle="offcanvas"
@@ -2276,8 +2356,8 @@
                                                 </div>
                                             </div>
                                             <div class="icon icon-link">
-                                                <a href="viewproduct.html"><img src="./assets/image/Best-Seller/eye.svg"
-                                                        class="eye" alt="eye"></a>
+                                               <img src="./assets/image/Best-Seller/eye.svg"
+                                                        class="eye img-show1" alt="eye">
                                             </div>
                                         </div>
                                     </div>
@@ -2291,10 +2371,10 @@
                                 </div>
                                 <div class="card">
                                     <div class="img-all">
-                                        <img src="./assets/image/Trending/product-15.webp" class="card-img-top img-org"
-                                            alt="Necklaces">
-                                        <img src="./assets/image/Trending/product-16.webp"
-                                            class="card-img-top img-hover" alt="Necklaces">
+                                        <a href="viewproduct.html"><img src="./assets/image/Trending/product-15.webp" class="card-img-top img-org img-mo1"
+                                            alt="Necklaces"></a>
+                                       <a href="viewproduct.html"> <img src="./assets/image/Trending/product-16.webp"
+                                            class="card-img-top img-hover" alt="Necklaces"/></a>
                                         <div class="icons">
                                             <div class="icon">
                                                 <button class="btn border-0" type="button" data-bs-toggle="offcanvas"
@@ -2571,8 +2651,8 @@
                                                 </div>
                                             </div>
                                             <div class="icon icon-link">
-                                                <a href="viewproduct.html"><img src="./assets/image/Best-Seller/eye.svg"
-                                                        class="eye" alt="eye"></a>
+                                                <img src="./assets/image/Best-Seller/eye.svg"
+                                                        class="eye img-show1" alt="eye">
                                             </div>
                                         </div>
                                     </div>
@@ -2586,10 +2666,10 @@
                                 </div>
                                 <div class="card">
                                     <div class="img-all">
-                                        <img src="./assets/image/Trending/product-17.webp" class="card-img-top img-org"
-                                            alt="Ring">
-                                        <img src="./assets/image/Trending/product-18.webp"
-                                            class="card-img-top img-hover" alt="Ring">
+                                       <a href="viewproduct.html"> <img src="./assets/image/Trending/product-17.webp" class="card-img-top img-org img-mo1"
+                                            alt="Ring"/></a>
+                                       <a href="viewproduct.html"><img src="./assets/image/Trending/product-18.webp"
+                                            class="card-img-top img-hover" alt="Ring"></a>
                                         <div class="icons">
                                             <div class="icon">
                                                 <button class="btn border-0" type="button" data-bs-toggle="offcanvas"
@@ -2866,8 +2946,8 @@
                                                 </div>
                                             </div>
                                             <div class="icon icon-link">
-                                                <a href="viewproduct.html"><img src="./assets/image/Best-Seller/eye.svg"
-                                                        class="eye" alt="eye"></a>
+                                                <img src="./assets/image/Best-Seller/eye.svg"
+                                                        class="eye img-show1" alt="eye">
                                             </div>
                                         </div>
                                     </div>
@@ -2881,10 +2961,10 @@
                                 </div>
                                 <div class="card">
                                     <div class="img-all">
-                                        <img src="./assets/image/Trending/product-19.webp" class="card-img-top img-org"
-                                            alt="Ring">
-                                        <img src="./assets/image/Trending/product-20.webp"
-                                            class="card-img-top img-hover" alt="Ring">
+                                        <a href="viewproduct.html"><img src="./assets/image/Trending/product-19.webp" class="card-img-top img-org img-mo1"
+                                            alt="Ring"/></a>
+                                        <a href="viewproduct.html"><img src="./assets/image/Trending/product-20.webp"
+                                            class="card-img-top img-hover" alt="Ring"/></a>
                                         <div class="icons">
                                             <div class="icon">
                                                 <button class="btn border-0" type="button" data-bs-toggle="offcanvas"
@@ -3161,8 +3241,8 @@
                                                 </div>
                                             </div>
                                             <div class="icon icon-link">
-                                                <a href="viewproduct.html"><img src="./assets/image/Best-Seller/eye.svg"
-                                                        class="eye" alt="eye"></a>
+                                                <img src="./assets/image/Best-Seller/eye.svg"
+                                                        class="eye img-show1" alt="eye">
                                             </div>
                                         </div>
                                     </div>
@@ -3180,6 +3260,119 @@
                 </div>
             </div>
         </section>
+        <div class="my-model1 ">
+            <div class="model-content model-contentscroll">
+            <svg class="close-btn1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path fill="#0000000"
+                    d="M507.3 155.3C513.5 149.1 513.5 138.9 507.3 132.7C501.1 126.5 490.9 126.5 484.7 132.7L320 297.4L155.3 132.7C149.1 126.5 138.9 126.5 132.7 132.7C126.5 138.9 126.5 149.1 132.7 155.3L297.4 320L132.7 484.7C126.5 490.9 126.5 501.1 132.7 507.3C138.9 513.5 149.1 513.5 155.3 507.3L320 342.6L484.7 507.3C490.9 513.5 501.1 513.5 507.3 507.3C513.5 501.1 513.5 490.9 507.3 484.7L342.6 320L507.3 155.3z" />
+            </svg>
+            <svg class="left-btn1"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path fill="#00000"
+                    d="M68.7 308.7C62.5 314.9 62.5 325.1 68.7 331.3L244.7 507.3C250.9 513.5 261.1 513.5 267.3 507.3C273.5 501.1 273.5 490.9 267.3 484.7L118.6 336L560 336C568.8 336 576 328.8 576 320C576 311.2 568.8 304 560 304L118.6 304L267.3 155.3C273.5 149.1 273.5 138.9 267.3 132.7C261.1 126.5 250.9 126.5 244.7 132.7L68.7 308.7z" />
+            </svg>
+            <svg class="right-btn1"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path fill="#00000"
+                    d="M571.3 331.3C577.5 325.1 577.5 314.9 571.3 308.7L395.3 132.7C389.1 126.5 378.9 126.5 372.7 132.7C366.5 138.9 366.5 149.1 372.7 155.3L521.4 304L80 304C71.2 304 64 311.2 64 320C64 328.8 71.2 336 80 336L521.4 336L372.7 484.7C366.5 490.9 366.5 501.1 372.7 507.3C378.9 513.5 389.1 513.5 395.3 507.3L571.3 331.3z" />
+            </svg>
+            <div class="view-product d-flex flex-wrap">
+            <div class="img-view">
+            <img src="./assets/image/viewproduct.webp" alt="Product Image" class="img-model"/>
+            </div>
+            <div class="info-product ">
+            <h2>Casual Round Jewelery</h2>
+            <div class="Rating  d-flex gap-3 align-items-center ">
+                <div class="star d-flex justify-content-around align-items-center">
+                    <img src="./assets/image/Gold-Jewelery/wired-flat-237-star-rating-hover-pinch.svg" alt="star">
+                    <img src="./assets/image/Gold-Jewelery/wired-flat-237-star-rating-hover-pinch.svg" alt="star">
+                    <img src="./assets/image/Gold-Jewelery/wired-flat-237-star-rating-hover-pinch.svg" alt="star">
+                    <img src="./assets/image/Gold-Jewelery/wired-flat-237-star-rating-hover-pinch.svg" alt="star">
+                    <img src="./assets/image/Gold-Jewelery/wired-flat-237-star-rating-hover-pinch.svg" alt="star">
+                </div>
+                <div class="review">
+                    <span> (3.671 review) </span>
+                </div>
+                <div class="num-add d-flex align-items-center gap-1 ps-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#C8102E" class="bi bi-cart2"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                    </svg>
+                    <p class="mb-0">9 people just added this product to their cart</p>
+                </div>
+            </div>
+            <div class="salay d-flex gap-2">
+                <span class="new-sall">$14,99</span>
+                <div>
+                    <span class="old-sal ">$19.337</span>
+                    <span class="discount">-29%</span>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse justo dolor,<br>
+                consectetur vel
+                metus vitae, tincidunt finibus dui fusce tellus enim.</p>
+            <div class="size">
+                <h3>Size medium</h3>
+                <div class="size-box d-flex gap-4">
+                    <span class="box">XS</span>
+                    <span class="box ">S</span>
+                    <span class="box">M</span>
+                    <span class="box">L</span>
+                </div>
+            </div>
+            <div class="color">
+                <h3>Color Beige</h3>
+                <div class="color-box d-flex gap-3">
+                    <div class="color-btn"><span class="check-btn btnn1"></span></div>
+                    <div class="color-btn"><span class="check-btn btn2"></span></div>
+                    <div class="color-btn"><span class="check-btn bg-success"></span></div>
+                    <div class="color-btn"><span class="check-btn btn4"></span></div>
+                    <div class="color-btn"><span class="check-btn bg-dark"></span></div>
+                </div>
+            </div>
+            <div class="numofpro d-flex gap-2 align-items-center">
+                <div class="incris d-flex gap-4 justify-content-center align-items-center">
+                    <span>-</span>
+                    <span>1</span>
+                    <span>+</span>
+                </div>
+                <p class="m-0">15 products available</p>
+            </div>
+            <div class="iconns d-flex gap-4 align-items-center justify-content-center">
+                <div class="icona1">
+                    <button class="btn text-white" type="button"> ADD To CART <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="#ffffff" class="bi bi-cart2" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                        </svg></button>
+                </div>
+                <div class="icon2">
+                    <button type="button" class="btn border-0  like-btn" data-bs-toggle="button" aria-pressed="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-heart"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="icon2">
+                    <button class="btn" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z" />
+                            <path
+                                d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="buys d-flex  align-items-center">
+                <button class="text-center border-0">Pay with <img src="./assets/image/footer/paypal-2.svg"></button>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
         <section class="Gold-Jewelery">
             <div class="container">
                 <div class="row ">
