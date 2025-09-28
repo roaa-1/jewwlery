@@ -46,6 +46,7 @@ const nextImg=()=>{
 } 
 imagShow.forEach(img=>{
   img.addEventListener("click",(e)=>{
+    modelImg.setAttribute("src", imageModel[currentIndex].getAttribute("src"));
     showModel();
   });
 });
@@ -100,6 +101,7 @@ const customModel2 = () => {
   imagShow1.forEach((img, index) => {
     img.addEventListener("click", () => {
       currentIndex1 = index;
+      modelImg.setAttribute("src", imageModel1[currentIndex1].getAttribute("src"));
       showModel();
     });
   });
