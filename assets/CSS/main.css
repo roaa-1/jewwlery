@@ -165,9 +165,9 @@ text-align: left;
 .nav-item.dropdown:hover .rotate-icon {
     transform: rotate(180deg);
 }
-nav .nav-link:hover {
+/*nav .nav-link:hover {
     color: rgb(200, 16, 46) !important;
-}
+}*/
 .dropdown-menu a:hover {
     color: rgb(200, 16, 46);
 }
@@ -206,9 +206,12 @@ font-weight: 700 !important;
     font-size: 0.8rem;
     font-weight: 400;
 }
-.nav-link:focus, .nav-link:hover{
-    color: rgb(200, 16, 46);
+.active{
+    color: rgb(200, 16, 46) !important;
 }
+/*.nav-link:focus, .nav-link:hover{
+    color: rgb(200, 16, 46);
+}*/
 /* header */
 .categories{
     padding: 5.6rem 0;

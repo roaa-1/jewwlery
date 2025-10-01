@@ -119,6 +119,19 @@ const customModel2 = () => {
     }
   });
 };
+const active =() =>{
+  const links = Array.from(document.querySelectorAll(".header .nav-link "));
+  links.forEach((link)=>{
+    link.addEventListener("click",(e)=>{
+      links.forEach((otherLink)=>{
+        otherLink.classList.remove("active");
+      })
+      e.target.classList.add("active");
+      console.log("Hi");
+    })
+  })
+}
 customHeader();
 customModel1();
 customModel2();
+active();
